@@ -12,9 +12,14 @@
     <style>
         body {
           padding: 25px;
-          background-color: rgb(37, 43, 43);
-          color: whitesmoke;
+          background-color: orange;
+          color: rgb(65, 64, 64);
           font-size: 25px;
+        }
+        .jumbotron {
+        background-size: 100% 100%;
+        text-align: center;
+        /* background-color: rgb(247, 152, 9); */
         }
 
       </style>
@@ -39,13 +44,15 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="color: rgb(182, 55, 55);">Skin Cancer Risk</a>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav"> -->
+      <div class="container-fluid">
+        <div class="row">
+        <div class="col-lg-12 jumbotron text-center" style="color: rgb(65, 64, 64);">
+          <h1>Skin Cancer Risk</h1>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html" style="color: rgb(182, 55, 55);">Home</a>
+            <!-- <li class="nav-item"> -->
+              <a class="nav-link" href="index.html" style="color: rgb(65, 64, 64);">Home</a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#samples" style="color: rgb(182, 55, 55);">Samples</a>
@@ -56,7 +63,7 @@
           </ul>
         </div>
       </div>
-    </nav>
+    <!-- </nav> -->
 
     <!-- Content Section -->
     <div class="container">
@@ -67,7 +74,7 @@
             <h3 class="title">Benign Mole</h3>
             &nbsp;
             <img src="images/Mole.jpg" alt="Benign Mole" class="img-thumbnail" width="200" height="200">
-            <p>This image is Low Risk. Doctor follow up isn't suggested.</p>
+            <p>This lesion is Low Risk. Doctor follow up isn't suggested.</p>
             </div>
         </div>
         &nbsp; 
@@ -80,6 +87,6 @@
                 <h3 class="title">Malign Mole</h3>
                 &nbsp;
                 <img src="images/Melanoma.jpg" alt="Melign Mole" class="img-thumbnail" width="200" height="200">
-                <p>This image is High Risk. Doctor follow up is suggested.</p>
+                <p>This lesion is High Risk. Doctor follow up is suggested.</p>
                 </div>
             </div>
