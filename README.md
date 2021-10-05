@@ -5,11 +5,6 @@
 
 Skin cancer detection based on lesion pictures is the topic we chose. Most people are affected in some way and at some point in their life by skin cancer or the question of if it’s cancer. Most people have a decent amount of sun exposure without the protection of sunscreen. Our objective is to train a model to analyze images of lesions, and accurately predict whether a lesion has the properties of cancer and if the person should seek medical follow-up.
 
-### Slide show link
-
-https://docs.google.com/presentation/d/1pEROkfh9EN2Nmx_0xZguhjlHKjxNGgsoeJCavWnAmtA/edit?usp=sharing
-
-
 ### Data Source
 Tschandl, Philipp, 2018, "The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions", https://doi.org/10.7910/DVN/DBW86T, Harvard Dataverse, V3, UNF:6:/APKSsDGVDhwPBWzsStU5A== [fileUNF]
 
@@ -33,7 +28,7 @@ The four spreadsheets can be joined into a single document. For the sake of spac
  
 ### ML Model
 
-Data Pre-Processing:
+#### Data Pre-Processing:
   - A filtered metadata spreadsheet was created. The dx_type column was dropped, and categories within the dx and localization columns were condensed into functional groupings.
     - ![image](https://user-images.githubusercontent.com/83254435/135788982-1227adab-4422-4b45-b7a2-b032f0a79dab.png)
     - mel (melanoma) and bcc (basal cell carcinoma) were combined into a Cancer category, nv (melanocytic nevi) was renamed with the common name Mole, and the remaining non-cancerous lesion types were combined into an Other category.
@@ -47,10 +42,15 @@ Data Pre-Processing:
   - OneHotEncoder was used to encode the features into binary classifications. 
   - Data was split on the dx_Cancer feature.
 
-Model Implementation:
+#### Model Implementation:
   - Using keras, we created a deep neural network with two hidden layers. The first layer contained 9 neurons and the second contained 3. 
   - We used the relu activation function for all layers because our goal is to correctly identify images labeled in the Cancer category.
   - We trained the model for 100 epochs.
   - The initial model's accuracy level was 83.7%. Due to the seriousness of skin cancer, we would hope to obtain an accuracy level above 95%. 
     - To improve accuracy, we will try training for longer, and will look at the neurons per layer to see if it needs more. 
     - For comparison, it may be helpful to perform a Logistic Regression as an alternative to the Neural Network.
+
+### Slide show link
+
+https://docs.google.com/presentation/d/1pEROkfh9EN2Nmx_0xZguhjlHKjxNGgsoeJCavWnAmtA/edit?usp=sharing
+
