@@ -54,3 +54,6 @@ The four spreadsheets can be joined into a single document. For the sake of spac
 
 https://docs.google.com/presentation/d/1pEROkfh9EN2Nmx_0xZguhjlHKjxNGgsoeJCavWnAmtA/edit?usp=sharing
 
+### Link to previous main Github repository
+
+https://github.com/GrantVC/Group-1-Project
